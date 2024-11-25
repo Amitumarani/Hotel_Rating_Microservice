@@ -68,7 +68,6 @@ public class UserController {
 		user.setAbout("Dummy About");
 		user.setEmail("Dummy@gmail.com");
         return new 	ResponseEntity<>(user,HttpStatus.OK);
-		
 	}
 	
 
