@@ -1,0 +1,12 @@
+Commands for Apache kafka 
+1: Download zip file
+2: Paste zip file in c drive 
+3: change name of of the folder [otherwise cmd will throw error saying command is too long]
+4: Starting zookeeper  -->   bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+   By default it will strat on port 2181
+5: Strating Apache kafka -->  bin\windows\kafka-server-start.bat config\server.properties
+   By default it will start on port 9092
+6: create topic in kafka --> bin\windows\kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+7: To see list of topic --> bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+8: To produce message in the topic --> bin\windows\kafka-console-producer.bat --topic user-topic --bootstrap-server localhost:9092
+9: To consume message from topic --> bin\windows\kafka-console-consumer.bat --topic user-topic --from-beginning --bootstrap-server localhost:9092
